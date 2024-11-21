@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun 888</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fun 888</h1>
+        <div class="balance">Số dư: <span id="balance">10000000</span> VND</div>
+        <div class="bet-section">
+            <input type="number" id="betAmount" placeholder="Số tiền cược (VND)" />
+            <button onclick="placeBet('tai')">Đặt Tài</button>
+            <button onclick="placeBet('xiu')">Đặt Xỉu</button>
+        </div>
+        <div class="timer">Thời gian đặt cược: <span id="timer">10</span> giây</div>
+        <div class="dice" id="dice">
+            <img src="dice1.png" alt="Dice 1" id="dice1">
+            <img src="dice2.png" alt="Dice 2" id="dice2">
+            <img src="dice3.png" alt="Dice 3" id="dice3">
+        </div>
+        <div class="result" id="result">Chờ kết quả...</div>
+    </div>
+    <canvas id="fireworks"></canvas>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
